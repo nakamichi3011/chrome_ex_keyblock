@@ -1,6 +1,3 @@
-// 無視リストの参考例
-// "S", "D", "R", " "
-
 var ignore_input_keys;
 var is_block = false;
 
@@ -46,10 +43,7 @@ document.onkeydown = function (e) {
         }
 
         let input_key = e.key.toUpperCase();
-        
-        console.log(split_keys);
-        console.log(input_key);
-
+ 
         if (split_keys.indexOf(input_key) > -1){
             return true;
         }
